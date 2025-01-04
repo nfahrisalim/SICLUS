@@ -1,0 +1,1324 @@
+@import url('https://fonts.cdnfonts.com/css/aileron');
+
+body {
+    overflow-x: hidden;
+}
+
+
+.navbar-container {
+    display: flex;
+    width: 100%;
+    height: 105px;
+    padding: 13px 77px 13px 102px;
+    background-color: #F8F8F8;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 10);
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 10px;
+    flex-shrink: 0;
+}
+
+.custom-navbar .navbar-brand img {
+    max-width: 90%;
+    height: auto;
+}
+
+.text-green {
+    color: #174439 !important; 
+    font-family: "Open Sauce One", sans-serif;
+    font-weight: 400;
+    border-radius: 20px;
+    padding: 6px 12px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.text-green:hover {
+    background-color: #FF7E00;
+    color: #F8F8F8 !important; 
+}
+
+.gap-10 > * + * {
+    margin-left: 10px;
+} 
+
+.landing-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    width: 100vw; 
+    height: 100vh;
+    position: relative;
+    background: url('Asset/img/Landing.png') no-repeat center center / cover;
+    color: #108346; 
+    text-align: justify;
+    overflow: hidden;
+    padding: 150px 20px 150px; 
+    z-index: 1;
+}
+
+
+.landing-logo { 
+    position: absolute;
+    top: 30px; 
+    left: 50%;
+    transform: translateX(-50%);
+    max-width: 300px;
+    width: 100%;
+    height: auto;
+    z-index: 2;
+}
+
+.landing-content {
+    position: relative;
+    max-width: 800px;
+    top: 90px; 
+    z-index: 2;
+    padding-top: 200px; 
+    margin-bottom: 50px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+
+.landing-text {
+    font-size: 1.2em;
+    line-height: 1.6;
+    color: #108346; 
+    font-family: 'Aileron', sans-serif;                                         
+}
+
+.landing-page::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    background: linear-gradient(to top, #064078, transparent);
+    z-index: -1;
+    opacity: 0.7;
+}
+
+@media (max-width: 600px) { .landing-page { 
+  background: url('Asset/img/Landing2.png') no-repeat center center / cover; 
+  } 
+}
+
+/* Section intro dengan latar belakang gambar */
+.intro {
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    background: url('Asset/img/IMG_5562.JPG') no-repeat center center / cover;
+    color: #fff;
+    overflow: hidden;
+}
+
+.intro-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 30%; 
+    height: 100%; 
+    background-color: rgba(0, 0, 0, 0.7); 
+    padding: 30px;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    text-align: left;
+}
+
+
+.intro-logo {
+    width: 200px;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+.intro-text {
+    font-size: 1em;
+    line-height: 1.5;
+    color: #ddd;
+    margin-bottom: 20px;
+    font-family: "Open Sauce One", sans-serif;
+}
+
+@media (max-width: 768px) {
+  .intro-container {
+    width: 100%;
+    height: auto;
+    bottom: 0;
+    top: auto;
+    left: 0;
+    padding: 20px;
+    border-radius: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+  }
+
+  .intro-logo {
+    display: none;
+  }
+}
+
+.play-button img {
+    width: 40px;
+    height: 40px;
+    transition: transform 0.3s ease;
+}
+
+.play-button img:hover {
+    transform: scale(1.1); 
+}
+
+/* Tombol Play dengan gambar khusus */
+.play-button img {
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.play-button img:hover {
+    transform: scale(1.1); /* Efek zoom saat hover */
+}
+
+/* Background core value */
+.core-value-bg {
+    background: url(Asset/img/Townhalll.png);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    padding: 50px 0px;
+    background-attachment: fixed;
+}
+
+.vc_row-overlay {
+    display: inline-block;
+    position: absolute !important;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+
+.vc_row-overlay:after {
+    display: block;
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.core-value-image {
+    width: 50%; 
+    max-width: 300px; 
+    height: auto;
+    margin: 20px 0; 
+    position: relative; 
+    z-index: 2; 
+}
+
+.section-heading.white-heading .sep-element {
+    border-color: #fff;
+    position: relative;
+}
+
+.sep-element {
+    border-bottom: 1px solid #192e40;
+    width: 120px;
+    margin: 0px auto;
+}
+
+.section-heading.white-heading .sep-element:after {
+    border-color: #fff;
+    background: #2f3849;
+}
+
+.sep-element:after {
+    border: 1px solid #108346;
+}
+
+.sep-element:after {
+    content: "";
+    background: #fff;
+    border-bottom: 1px solid #237ac6;
+    width: 10px;
+    height: 11px;
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    margin-left: -5px;
+    margin-top: -5px;
+}
+
+/* Guest section */
+.guest-section {
+  --first-color: linear-gradient(0deg, #FFD0A3 0%, #FF7E00 60%);
+  --title-color: #1B6259;
+  --text-color: #FF7E00;
+  --body-color: hsl(0, 0%, 95%);
+  --container-color: hsl(0, 0%, 100%);
+  --body-font: "Open Sauce One", sans-serif;
+  --h2-font-size: 1.25rem;
+  --small-font-size: .813rem;
+  padding: 60px 0;
+  text-align: center;
+  background-color: transparent;
+  position: relative;
+}
+
+/* Responsive typography */
+@media screen and (min-width: 1120px) {
+  .guest-section {
+    --h2-font-size: 1.5rem;
+    --small-font-size: .875rem;
+  }
+}
+
+/* Base styles */
+.guest-section::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(180deg, #174439 28%, #1B6259 84.12%);
+  z-index: -1;
+}
+
+.guest-section img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+/* Card layout */
+.guest-section .container {
+  display: flex;
+  justify-content: center;
+  max-width: 1200px;
+  margin: auto;
+  padding: 3rem 1rem;
+  flex-wrap: wrap;
+}
+
+.guest-section .card__container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+}
+
+.guest-section .card__article {
+  position: relative;
+  overflow: hidden;
+  background-color: var(--container-color);
+  padding: 1rem;
+  border-radius: 1rem;
+  transition: transform 0.3s ease;
+  width: 260px;
+  box-shadow: none;
+}
+
+.guest-section .card__img {
+  width: 100%;
+  max-width: 260px;
+  border-radius: 1rem;
+  margin-bottom: 1rem;
+}
+
+.guest-section .card__data {
+  width: 220px; 
+  background-color: var(--container-color);
+  padding: 1.5rem 2rem;
+  position: absolute;
+  bottom: -9rem;
+  left: 0;
+  right: 0;
+  margin-inline: auto;
+  opacity: 0;
+  transition: opacity 1s 1s;
+}
+
+.guest-section .card__description {
+  display: block;
+  font-size: var(--small-font-size);
+  margin-bottom: .25rem;
+}
+
+.guest-section .card__title {
+  font-size: var(--h2-font-size);
+  font-weight: 500;
+  color: var(--title-color);
+  margin-bottom: .75rem;
+}
+
+.guest-section .card__button:hover {
+  text-decoration: underline;
+}
+
+/* Hover animations */
+.guest-section .card__article:hover .card__data {
+  animation: show-data 1s forwards;
+  opacity: 1;
+  transition: opacity .3s;
+}
+
+.guest-section .card__article:hover {
+  animation: remove-overflow 2s forwards;
+}
+
+.guest-section .card__article:not(:hover) {
+  animation: show-overflow 2s forwards;
+}
+
+.guest-section .card__article:not(:hover) .card__data {
+  animation: remove-data 1s forwards;
+}
+
+.invited-speakers-heading {
+  font-family: "Open Sauce One", sans-serif;
+  font-size: 34px;
+  font-weight: 900;
+  background: var(--first-color);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  text-decoration-line: underline;
+  position: relative;
+}
+
+.xpertise-talk-heading {
+  font-family: "Open Sauce One", sans-serif;
+  font-size: 28px;
+  font-weight: bold;
+  color: #FFFFFF;
+  margin: 1.5rem 0;
+}
+
+/* Keyframes */
+@keyframes show-data {
+  50% { transform: translateY(-10rem); }
+  100% { transform: translateY(-7rem); }
+}
+
+@keyframes remove-overflow { to { overflow: initial; } }
+
+@keyframes remove-data {
+  0% { transform: translateY(-7rem); }
+  50% { transform: translateY(-10rem); }
+  100% { transform: translateY(.5rem); }
+}
+
+@keyframes show-overflow {
+  0% { overflow: initial; pointer-events: none; }
+  50% { overflow: hidden; }
+}
+
+/* Breakpoints */
+@media screen and (max-width: 340px) {
+  .guest-section .container { margin-inline: 1rem; }
+  .guest-section .card__data { width: 250px; padding: 1rem; }
+}
+
+@media screen and (min-width: 768px) {
+  .guest-section .card__container {
+    gap: 1.5rem;
+  }
+}
+
+@media screen and (min-width: 1120px) {
+  .guest-section .container { height: 100vh; }
+  .guest-section .card__img { width: 280px; }
+  .guest-section .card__data { width: 250px; padding-inline: 2.5rem; }
+}
+
+/* Core Events Section CSS */
+.core-events-section {
+  padding: 60px 0;
+  background: url('Asset/img/Events.png') no-repeat center center/cover;
+  text-align: center;
+  position: relative;
+}
+
+.core-events-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.core-events-heading {
+  font-family: "Open Sauce One", sans-serif;
+  font-size: 2.5rem;
+  font-weight: bold;
+  background: linear-gradient(0deg, #FFD0A3 0%, #FF7E00 60%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 3rem;
+}
+
+.core-events__cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+}
+
+.core-event-card {
+  position: relative;
+  width: 300px;
+  border-radius: 1rem;
+  overflow: hidden;
+  transition: transform 0.3s ease;
+  box-shadow: 0 10px 20px rgba(5, 109, 4, 0.25);
+}
+
+.core-event-card:hover {
+  transform: translateY(-10px);
+}
+
+.core-event-card__img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+}
+
+.core-event-card__content {
+  position: relative;
+  padding: 1.5rem;
+  background: url('Asset/img/Lontara.png') no-repeat center center/cover;
+  border-bottom-left-radius: 1rem;
+  border-bottom-right-radius: 1rem;
+}
+
+.core-event-card__content::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-bottom-left-radius: 1rem;
+  border-bottom-right-radius: 1rem;
+  z-index: 1;
+}
+
+.core-event-card__title {
+  position: relative;
+  font-family: "Open Sauce One", sans-serif;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #FFFFFF;
+  margin-bottom: 1rem;
+  z-index: 2;
+}
+
+.core-event-card__description {
+  position: relative;
+  font-family: "Open Sauce One", sans-serif;
+  font-size: 1rem;
+  color: #FFFFFF;
+  line-height: 1.5;
+  z-index: 2;
+}
+
+@media (max-width: 600px) { .core-events-section { 
+  background: url('Asset/img/Landing2.png') no-repeat center center/cover; 
+} 
+}
+
+@media screen and (max-width: 768px) {
+  .core-events__cards {
+      flex-direction: column;
+      align-items: center;
+  }
+  
+  .core-event-card {
+      width: 90%;
+  }
+}
+
+@media screen and (min-width: 1120px) {
+  .core-events-heading {
+      font-size: 3rem;
+  }
+}
+
+
+/* Student Bootcamp */
+.student-bootcamp-section {
+  padding: 60px 0;
+  background: linear-gradient(180deg, #174439 28%, #1B6259 84.12%);
+  text-align: center;
+  position: relative;
+}
+
+.student-bootcamp-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.student-bootcamp-content {
+  margin-bottom: 3rem;
+}
+
+.student-bootcamp-heading {
+  font-family: "Open Sauce One", sans-serif;
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #FFFFFF;
+  margin-bottom: 1.5rem;
+}
+
+.student-bootcamp-description {
+  font-family: "Open Sauce One", sans-serif;
+  font-size: 1.125rem;
+  color: #FFFFFF;
+  line-height: 1.6;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.student-bootcamp-gallery {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(4, 200px);
+  gap: 0;
+}
+.gallery-container {
+  padding: 50px 0;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  background-color: transparent;
+}
+
+.gallery {
+  display: flex;
+  width: 100%;
+  height: auto;
+  overflow-x: hidden;
+  transform: scale(0.9);
+  transform-origin: center;
+}
+
+.gallery-item {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+.gallery-link {
+  display: block;
+}
+
+.gallery-thumbnail {
+  object-fit: cover;
+  margin: 0;
+  transition: transform 0.5s ease;
+}
+
+.gallery-link:hover .gallery-thumbnail {
+  transform: scale(1.1);
+}
+@media (max-width: 768px) {
+  .highlight-container {
+    padding: 0;
+  }
+  .gallery-wrap .gallery-item.column-3,
+    .gallery-wrap .gallery-item.column-4,
+    .gallery-wrap .gallery-item.column-5 {
+      display: none;
+    }
+    .gallery-wrap .gallery-item {
+      gap: 0;
+    }
+  }
+
+@media (max-width: 768px) {
+  .gallery {
+    transform: scale(0.8);
+    width: 100%;
+    flex-wrap: wrap;
+  }
+  .gallery-item {
+    flex: 1 1 calc(50% - 1rem);
+    margin-bottom: 1rem;
+  }
+  .gallery-thumbnail {
+    width: 100%;
+    height: auto;
+  }
+}
+
+@media (max-width: 480px) {
+  .gallery {
+    transform: scale(0.7);
+  }
+  .gallery-item {
+    flex: 1 1 100%;
+  }
+}
+
+
+  /* Modal Styles */
+  .modal {
+    display: none;
+    position: fixed;
+    z-index: 100;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+
+  .modal-content {
+    margin: auto;
+    display: block;
+    max-width: 80%;
+    max-height: 80%;
+    width: auto;
+    height: auto;
+  }
+
+  .close {
+    position: absolute;
+    top: 20px;
+    right: 35px;
+    color: #fff;
+    font-size: 40px;
+    font-weight: bold;
+    cursor: pointer;
+  }
+
+  @media screen and (min-width: 1120px) {
+    .student-bootcamp-heading {
+      font-size: 3rem;
+    }
+  }
+
+  .competition-section {
+    padding: 60px 0;
+    background-color: #ffffff;
+    text-align: center;
+  }
+
+  .competition-heading {
+    font-family: "Open Sauce One", sans-serif;
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #174439;
+    margin-bottom: 1rem;
+  }
+
+  .competition-subheading {
+    font-family: "Open Sauce One", sans-serif;
+    font-size: 1.25rem;
+    color: #174439;
+    margin-bottom: 2rem;
+  }
+
+  .competition-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+  }
+
+  .competition-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+  }
+  @media (max-width: 768px) {
+    .highlight-container {
+      padding: 0;
+    }
+    .gallery-wrap .gallery-item.column-3,
+    .gallery-wrap .gallery-item.column-4,
+    .gallery-wrap .gallery-item.column-5 {
+      display: none;
+    }
+  }
+
+  .competition-item {
+    width: calc(20% - 2rem);
+    max-width: 200px;
+    height: auto;
+    background: url('Asset/img/Lontara.png') no-repeat center center/cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 1rem;
+    transition: transform 0.3s ease;
+  }
+
+  .competition-item:hover {
+    transform: scale(1.05);
+  }
+
+  .competition-logo {
+    max-width: 80%;
+    max-height: 80%;
+    object-fit: contain;
+  }
+
+  @media (max-width: 768px) {
+    .competition-item {
+      width: calc(50% - 1rem);
+    }
+  }
+
+  @media (max-width: 480px) {
+    .competition-item {
+      width: calc(100% - 1rem);
+    }
+  }
+
+  .participant-section {
+    padding: 60px 0;
+    background-color: #ffffff;
+    text-align: center;
+  }
+
+  .participant-heading {
+    font-family: "Open Sauce One", sans-serif;
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #174439;
+    margin-bottom: 1rem;
+  }
+
+  .participant-subheading {
+    font-family: "Open Sauce One", sans-serif;
+    font-size: 1.25rem;
+    color: #174439;
+    margin-bottom: 2rem;
+  }
+
+  .participant-map-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+    position: relative;
+  }
+
+  .participant-map {
+    position: relative;
+  }
+
+  .world-map {
+    width: 100%;
+    height: auto;
+  }
+
+  .flag-marker {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transform: scale(0.8);
+  }
+
+  .flag-marker.norway {
+    top: 5%;
+    left: 50%;
+  }
+
+  .flag-marker.japan {
+    top: 23%;
+    right: 13%;
+  }
+
+  .flag-marker.sudan {
+    top: 35%;
+    left: 55%;
+  }
+
+  .flag-marker.france {
+    top: 17%;
+    left: 44%;
+  }
+
+  .flag-marker.indonesia {
+    bottom: 40%;
+    right: 17%;
+  }
+
+ .flag {
+    width: 40px;
+    height: auto;
+    margin-bottom: 0.5rem;
+  }
+
+  .flag-label {
+    font-family:  "Open Sauce One", sans-serif;
+    font-size: 0.75rem;
+    color: #174439;
+    font-weight: bold;
+  }
+
+  @media (max-width: 768px) {
+    .participant-map-container {
+      max-width: 100%;
+      padding: 1rem;
+    }
+
+    .flag-marker {
+      transform: scale(0.6);
+    }
+
+    .world-map {
+      width: 100%;
+      height: auto;
+    }
+  }
+
+  @media (max-width: 480px) {
+    .flag-marker {
+      transform: scale(0.5);
+    }
+
+    .world-map {
+      width: 100%;
+      height: auto;
+    }
+  }
+
+  .statistics-section {
+    padding: 60px 0;
+    background-color: #ffffff;
+    text-align: center;
+  }
+
+  .statistics-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+  }
+
+  .statistic-item {
+    width: 20%;
+    background: #f7f7f7;
+    padding: 2rem;
+    border-radius: 1rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+  }
+
+  .statistic-item:hover {
+    transform: scale(1.05);
+  }
+
+  .statistic-value {
+    font-family: 'Aileron', sans-serif;  
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #174439;
+    margin-bottom: 0.5rem;
+  }
+
+  .statistic-description {
+    font-family: 'Aileron', sans-serif;  
+    font-size: 1rem;
+    color: #174439;
+  }
+
+  @media (max-width: 768px) {
+    .statistics-container {
+      max-width: 300px;
+      flex-direction: column;
+    }
+    .statistic-item {
+      width: 100%;
+      padding: 1rem;
+      font-size: 0.9rem;
+    }
+    .statistic-value {
+      font-size: 1.2rem;
+    }
+    .statistic-description {
+      font-size: 0.9rem;
+    }
+  }
+
+  @media (max-width: 480px) {
+    .statistics-container {
+      max-width: 50%;
+      flex-direction: column;
+    }
+    .statistic-item {
+      width: 100%;
+      padding: 0.5rem;
+      font-size: 0.8rem;
+    }
+    .statistic-value {
+      font-size: 1rem;
+    }
+    .statistic-description {
+      font-size: 0.8rem;
+    }
+  }
+
+  @media (max-width: 768px) {
+    .competition-item,.flag-marker {
+      transform: scale(0.7);
+    }
+  }
+
+  @media (max-width: 480px) {
+    .competition-item,.flag-marker {
+      transform: scale(0.5);
+    }
+  }
+  .highlight-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 12rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .highlight-item {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+  }
+
+  .highlight-image {
+    width: 300px;
+    height: auto;
+    border-radius: 1rem;
+  }
+  .highlight-content {
+    max-width: 600px;
+    text-align: left;
+  }
+
+  .highlight-title {
+    font-family: "Open Sauce One", sans-serif;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #174439;
+    margin-bottom: 1rem;
+  }
+
+  .highlight-content p {
+    font-family: "Open Sauce One", sans-serif;
+    font-size: 1rem;
+    color: #174439;
+    line-height: 1.6;
+  }
+
+  @media (max-width: 768px) {
+    .highlight-section {
+      padding: 0;
+    }
+    .highlight-container {
+      padding: 0;
+      max-width: 600px;
+    }
+    .highlight-image {
+      width: 100px;
+      height: auto;
+    }
+    .highlight-content {
+      max-width: 300px;
+      font-size: 0.8rem;
+      text-align: left;
+    }
+    .highlight-title {
+      font-size: 1.2rem;
+    }
+    .highlight-content p {
+      font-size: 0.8rem;
+    }
+  }
+
+  @media (max-width: 480px) {
+    .highlight-section {
+      padding: 0;
+    }
+    .highlight-container {
+      padding: 0;
+      max-width: 600px;
+    }
+    .highlight-image {
+      width: 80px;
+    }
+    .highlight-title {
+      font-size: 1rem;
+    }
+    .highlight-content p {
+      font-size: 0.7rem;
+    }
+  }
+
+
+  .xpertise-section {
+    padding: 60px 0;
+    background-color: #ffffff;
+    text-align: center;
+  }
+
+  .xpertise-heading-container {
+    margin-bottom: 2rem;
+  }
+
+  .xpertise-heading-image {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+  }
+
+  .xpertise-content {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 2rem;
+    text-align: justify;
+  }
+  .xpertise-content p {
+    font-family: "Open Sauce One", sans-serif;
+    font-size: 1.125rem;
+    color: #174439;
+    line-height: 1.8;
+  }
+
+  #testimoni {
+    padding: 60px 0;
+    background-color: #f9f9f9;
+    text-align: center;
+  }
+
+  .testimoni-container {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 20px 70px;
+  }
+
+  .swiper-container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    position: relative;
+    width: 100%;
+  }
+
+  .swiper {
+    width: 100%;
+    padding: 20px 0;
+  }
+
+  .swiper-slide {
+    background: url('Asset/img/Lontara.png') no-repeat center center/cover;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+    height: auto;
+    width: calc(33.33% - 20px);
+    transition: transform 0.3s;
+    font-family:'Aileron', sans-serif;  
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .swiper-button-next,
+  .swiper-button-prev {
+    width: 40px;
+    height: 40px;
+    background: #FF7E00;
+    border-radius: 50%;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    top: 50%;
+    transform: translateY(-50%);
+    position: absolute;
+  }
+
+  .swiper-button-next:after,
+  .swiper-button-prev:after {
+    font-size: 18px;
+    color: #ffffff;
+  }
+  .statistics-section {
+    padding: 60px 0;
+    background-color: #ffffff;
+    text-align: center;
+  }
+
+  .statistics-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+  }
+
+  .statistic-item {
+    width: 20%;
+    background: #f7f7f7;
+    padding: 2rem;
+    border-radius: 1rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+  }
+
+  .statistic-item:hover {
+    transform: scale(1.05);
+  }
+
+  .statistic-value {
+    font-family: 'Aileron', sans-serif;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #174439;
+    margin-bottom: 0.5rem;
+  }
+
+  .statistic-description {
+    font-family: 'Aileron', sans-serif;
+    font-size: 1rem;
+    color: #174439;
+  }
+
+  @media (max-width: 768px) {
+    .statistics-container {
+      max-width: 600px;
+      flex-direction: column;
+    }
+    .statistic-item {
+      width: 100%;
+      padding: 1rem;
+      font-size: 0.9rem;
+    }
+    .statistic-value {
+      font-size: 1.2rem;
+    }
+    .statistic-description {
+      font-size: 0.9rem;
+    }
+  }
+
+  @media (max-width: 480px) {
+    .statistics-container {
+      max-width: 100%;
+      flex-direction: column;
+    }
+    .statistic-item {
+      width: 100%;
+      padding: 0.5rem;
+      font-size: 0.8rem;
+    }
+    .statistic-value {
+      font-size: 1rem;
+    }
+    .statistic-description {
+      font-size: 0.8rem;
+    }
+  }
+
+  .quote img {
+    width: 120px;
+    height: 90px;
+  }
+
+  .testimonial-text {
+    font-family:  "Open Sauce One", sans-serif;
+    font-size: 1rem;
+    color: #ffffff;
+    line-height: 1.6;
+    max-width: 600px;
+    text-align: justify;
+  }
+  .testimonial-author {
+    font-family: "Open Sauce One", sans-serif;
+    font-size: 0.875rem;
+    color: #ffffff;
+    margin-top: 1rem;
+  }
+
+  .partnership-section {
+    padding: 60px 0;
+    background: url('Asset/img/landing.png') no-repeat center center/cover;
+    text-align: center;
+  }
+
+  .partnership-heading {
+    font-family: "Open Sauce One", sans-serif;
+    font-size: 2.5rem;
+    font-weight: bold;
+    background: linear-gradient(0deg, #FFD0A3 0%, #FF7E00 60%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 3rem;
+  }
+
+  .partnership-text {
+    font-family: "Open Sauce One", sans-serif;
+    font-size: 1.125rem;
+    color: #174439;
+    max-width: 800px;
+    margin: 0 auto 3rem;
+  }
+
+  .sponsor-section {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    align-items: center;
+  }
+
+  .event-sponsor,
+  .event-partner,
+  .media-partner {
+    width: 100%;
+    max-width: 800px;
+  }
+
+  .sponsor-heading {
+    font-family: "Open Sauce One", sans-serif;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #174439;
+    margin-bottom: 1rem;
+  }
+
+  .sponsor-image {
+    width: 100%;
+    height: auto;
+    border-radius: 0.5rem;
+  }
+
+  @media (max-width: 768px) {
+    .sponsor-section {
+      gap: 2rem;
+    }
+    .event-sponsor,
+    .event-partner,
+    .media-partner {
+      max-width: 100%;
+    }
+  }
